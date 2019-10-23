@@ -39,6 +39,8 @@ public:
 	bool play(const char *filename);
 	void stop(void);
 	bool isPlaying(void) { return playing; }
+	void setPlaying(bool);
+	void setLooping(bool);
 	uint32_t positionMillis(void);
 	uint32_t lengthMillis(void);
 	virtual void update(void);
@@ -47,6 +49,7 @@ private:
 	uint32_t file_size;
 	volatile uint32_t file_offset;
 	volatile bool playing;
+	volatile bool loop;
 };
 
 #endif

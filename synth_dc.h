@@ -131,6 +131,7 @@ public:
 		int32_t m = magnitude;
 		return (float)m * (1.0 / 2147418112.0);
 	}
+	uint8_t getState(void) { return state; }
 	virtual void update(void);
 private:
 	uint8_t  state;     // 0=steady output, 1=transitioning

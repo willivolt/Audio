@@ -42,6 +42,9 @@ public:
 	bool isPlaying(void) { return playing; }
 	uint32_t positionMillis(void);
 	uint32_t lengthMillis(void);
+	void setPlaying(bool p) { playing = p; }
+	void setPlaybackRate(float f) { ; }
+	void setInterpolationEnabled(bool b) {}
 	virtual void update(void);
 private:
 	SerialFlashFile rawfile;

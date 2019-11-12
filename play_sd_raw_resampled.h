@@ -67,6 +67,7 @@ public:
         sdReader.setInterpolationEnabled(enableInterpolation);
     }
     
+	void setPlaying(bool p) { playing = p; }
 
 private:
 
